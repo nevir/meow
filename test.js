@@ -28,7 +28,7 @@ test('return object', t => {
 
 test('support help shortcut', t => {
 	const cli = fn(['unicorn', 'cat']);
-	t.is(cli.help, indentString('\nCLI app helper\n\nunicorn\ncat', '  '));
+	t.is(cli.help, indentString('\nCLI app helper\n\nunicorn\ncat\n', '  '));
 });
 
 test('spawn cli and show version', async t => {
